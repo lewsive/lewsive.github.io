@@ -1,0 +1,55 @@
+:root{
+    --bg:#0f1720;
+    --card:#111827;
+    --muted:#9CA3AF;
+    --accent:#1FB6FF;
+    --text:#E6EEF6;
+    --radius:12px;
+    --max-width:980px;
+    --container-padding:18px;
+    }
+    
+    
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+    background:linear-gradient(180deg,var(--bg),#06121a);
+    color:var(--text);
+    line-height:1.45;
+    -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:var(--max-width);margin:0 auto;padding:var(--container-padding)}
+    .header-grid{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center}
+    .profile-photo{width:120px;height:120px;border-radius:12px;object-fit:cover;border:2px solid rgba(255,255,255,0.06)}
+    h1{font-size:1.8rem;margin:0}
+    h2{font-size:1.25rem;margin-top:22px}
+    .site-header{padding:20px 0}
+    .contact a{color:var(--accent);text-decoration:none}
+    .objective{margin-top:8px;color:var(--muted)}
+    .skills-list{list-style:none;padding:0;margin:0 0 12px 0}
+    .skills-list li{margin-bottom:8px}
+    article{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-bottom:12px}
+    .project-header{border-bottom:1px solid rgba(255,255,255,0.03);padding:14px 0}
+    figure{margin:16px 0}
+    figure img{width:100%;border-radius:8px;display:block}
+    .site-footer{padding:18px 0;color:var(--muted)}
+    .back{color:var(--muted);text-decoration:none}
+    
+    
+    @media (max-width:720px){
+    .header-grid{grid-template-columns:84px 1fr}
+    .profile-photo{width:84px;height:84px}
+    h1{font-size:1.4rem}
+    }
+    
+    
+    a:focus,a:hover{outline:none}
+    a:focus-visible{outline:3px solid rgba(31,182,255,0.2);border-radius:6px}
+    
+    
+    @media print{
+    body{background:white;color:#111}
+    .container{max-width:100%;padding:0}
+    }

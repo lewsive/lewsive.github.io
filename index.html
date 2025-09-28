@@ -1,0 +1,171 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noah Coe — Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-grid">
+      <img src="images/formal_pic.png" alt="Noah Coe smiling, professional headshot" class="profile-photo" />
+      <div>
+        <h1>Noah Coe</h1>
+        <p class="contact">Lake Mary, FL &nbsp;|&nbsp; <a href="mailto:noahcoe02@gmail.com">noahcoe02@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; +1 (407) 883-2788</p>
+        <p class="objective"><strong>Objective:</strong> Eager and detail-oriented senior computer science student with a strong background in full-stack web development, seeking an entry-level software engineer position to sharpen my soft and technical skills.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <p><strong>University of Central Florida</strong> — Bachelor of Science, Major in Computer Science. Expected Spring 2026.</p>
+    </section>
+
+    <section aria-labelledby="courses">
+      <h2 id="courses">Related Courses</h2>
+      <p>Data Structures and Algorithms, Programming I & II, Databases, Operating Systems, Computer Organization, Linear Algebra, Discrete Mathematics I & II, Processes for Software Engineering.</p>
+    </section>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Technical Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Programming:</strong> JavaScript, Python, Java, C++, C</li>
+        <li><strong>Web:</strong> Responsive web design, HTML, CSS, jQuery, React, Node, Express</li>
+        <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
+        <li><strong>Version Control:</strong> Git, GitHub</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">Selected Projects</h2>
+      <article>
+        <h3><a href="project1.html">Full-Stack Job Tracking Application</a></h3>
+        <p>Developed a full-stack job tracking application using the MERN stack. Implemented frontend in React and a RESTful API using Node and Express. Technologies: React.js, Node.js/Express, PostgreSQL, HTML, CSS, JavaScript.</p>
+      </article>
+
+      <article>
+        <h3><a href="project2.html">Mini Compiler (Team Lead)</a></h3>
+        <p>Led a 4-member team to develop a mini compiler in C that compiles assembly language to machine instructions. Built using FLEX and BISON; implemented lexer and parser with strong error handling.</p>
+      </article>
+
+      <article>
+        <h3>Multithreaded DJ Application (In Progress)</h3>
+        <p>Designing a multithreaded DJ application using C++ and the SoundCloud API to enable real-time audio processing and low-latency mixing. Focused on multi-threading, performance optimization, and an intuitive UI for track control.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="experience">
+      <h2 id="experience">Work Experience</h2>
+      <p>(If you have work experience to add, replace this placeholder with job entries including title, employer, dates, and bullets.)</p>
+    </section>
+
+    <section aria-labelledby="awards">
+      <h2 id="awards">Awards & Honors</h2>
+      <p>—</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Noah Coe — <a href="resume.pdf">Download PDF</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Full-Stack Job Tracker — Noah Coe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="project-header">
+    <div class="container">
+      <a href="index.html" class="back">← Back to Resume</a>
+      <h1>Full-Stack Job Tracking Application</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <figure>
+      <img src="images/job-tracker.png" alt="Screenshot of Job Tracking Application UI" />
+      <figcaption>Job tracking app — React frontend and Express backend.</figcaption>
+    </figure>
+
+    <section>
+      <h2>Project Description</h2>
+      <p>Developed a full-stack job tracking application to help users monitor job applications, statuses, and notes. The app supports user authentication, job CRUD, and filtering by status. Frontend built in React with responsive pages; backend is a RESTful API built with Node and Express and PostgreSQL for persistence.</p>
+    </section>
+
+    <section>
+      <h2>Skills & Technologies</h2>
+      <ul>
+        <li>React.js, Node.js, Express.js</li>
+        <li>PostgreSQL</li>
+        <li>REST API design, Authentication</li>
+        <li>Responsive UI, CSS grid/flexbox</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p><a href="index.html">Back to Resume</a></p>
+  </footer>
+</body>
+</html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini-Compiler — Noah Coe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="project-header">
+    <div class="container">
+      <a href="index.html" class="back">← Back to Resume</a>
+      <h1>Mini-Compiler (Team Lead)</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <figure>
+      <img src="images/mini-compiler.png" alt="Diagram showing components of the mini-compiler" />
+      <figcaption>Lexer → Parser → AST → Codegen pipeline</figcaption>
+    </figure>
+
+    <section>
+      <h2>Project Description</h2>
+      <p>Led a 4-member team to build a mini-compiler in C that converts assembly-level code into machine instructions. Implemented lexical analysis with FLEX, syntax parsing with BISON, and key components for error reporting, symbol table management, and code generation. This project strengthened my understanding of language processing and systems-level programming.</p>
+    </section>
+
+    <section>
+      <h2>Skills & Technologies</h2>
+      <ul>
+        <li>C, FLEX, BISON</li>
+        <li>Compiler design fundamentals: lexer, parser, AST, code generation</li>
+        <li>Team leadership, task scheduling</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p><a href="index.html">Back to Resume</a></p>
+  </footer>
+</body>
+</html>
+```
